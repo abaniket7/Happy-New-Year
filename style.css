@@ -110,13 +110,13 @@ body {
     top: 0%;
   }
   100% {
-    top: -750%;
+    top: -1750%;
   }
 }
 
 .year {
   position: absolute;
-  top: 20vh; /* Adjusted for better mobile visibility */
+  top: 45vh; /* Adjusted for better mobile visibility */
   width: 100%;
   text-align: center;
 }
@@ -205,7 +205,7 @@ body {
   }
   100% {
     right: 36vw; /* Adjusted for better mobile visibility */
-    top: -20vh; /* Adjusted for better mobile visibility */
+    top: -120vh; /* Adjusted for better mobile visibility */
   }
 }
 
@@ -264,13 +264,13 @@ body {
 }
 
 .cracker:nth-child(1) {
-  transform: rotate(0deg) translateY(-1vw); /* Adjusted for better mobile visibility */
+  transform: rotate(0deg) translateY(-15px); /* Adjusted for better mobile visibility */
 }
 .cracker:nth-child(2) {
-  transform: rotate(30deg) translateY(-1vw); /* Adjusted for better mobile visibility */
+  transform: rotate(30deg) translateY(-15px); /* Adjusted for better mobile visibility */
 }
 .cracker:nth-child(3) {
-  transform: rotate(60deg) translateY(-1vw); /* Adjusted for better mobile visibility */
+  transform: rotate(60deg) translateY(-15px); /* Adjusted for better mobile visibility */
 }
 .cracker:nth-child(4) {
     transform: rotate(90deg) translateY(-15px);
@@ -314,6 +314,41 @@ body {
 
 #firework3 {
     left: 80%;
+    top: 15%;
+    transform: scale(1.5);
+}
+
+#firework4 {
+    left: 45%;
+    top: 80%;
+    transform: scale(1);
+}
+
+#firework5 {
+    left: 50%;
+    top: 70%;
+    transform: scale(0.5);
+}
+
+#firework6 {
+    left: 90%;
+    top: 55%;
+    transform: scale(1.5);
+}
+#firework7 {
+    left: 25%;
+    top: 90%;
+    transform: scale(1);
+}
+
+#firework8 {
+    left: 60%;
+    top: 25%;
+    transform: scale(0.5);
+}
+
+#firework9 {
+    left: 20%;
     top: 15%;
     transform: scale(1.5);
 }
