@@ -102,7 +102,7 @@ body {
   position: absolute;
   top: 0%;
   animation: old_animation 2.5s ease-in-out 4s forwards;
-  margin-left: -0vw; /* Adjusted for better mobile visibility */
+  margin-left: 0.6vw; /* Adjusted for better mobile visibility */
 }
 
 @keyframes old_animation {
@@ -125,7 +125,7 @@ body {
   font-size: 8vw;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  letter-spacing: -1vw; /* Adjusted for better mobile visibility */
+  letter-spacing: -0.8vw; /* Adjusted for better mobile visibility */
 }
 
 .new {
@@ -144,16 +144,16 @@ body {
 
 @keyframes new_animation {
   0% {
-    right: -4vw; /* Adjusted for better mobile visibility */
+    right: 0vw; /* Adjusted for better mobile visibility */
   }
   40% {
-    right: 35vw; /* Adjusted for better mobile visibility */
+    right: 33.5vw; /* Adjusted for better mobile visibility */
   }
   90% {
-    right: 35vw; /* Adjusted for better mobile visibility */
+    right: 33.5vw; /* Adjusted for better mobile visibility */
   }
   100% {
-    right: 39vw; /* Adjusted for better mobile visibility */
+    right: 38.2vw; /* Adjusted for better mobile visibility */
     color: yellow;
   }
 }
@@ -194,17 +194,17 @@ body {
 
 @keyframes balloon_animation {
   0% {
-    right: -8vw; /* Adjusted for better mobile visibility */
+    right: -4vw; /* Adjusted for better mobile visibility */
   }
   40% {
-    right: 31vw; /* Adjusted for better mobile visibility */
+    right: 29.8vw; /* Adjusted for better mobile visibility */
   }
   50% {
-    right: 36vw; /* Adjusted for better mobile visibility */
+    right: 35vw; /* Adjusted for better mobile visibility */
     top: 50%;
   }
   100% {
-    right: 36vw; /* Adjusted for better mobile visibility */
+    right: 35vw; /* Adjusted for better mobile visibility */
     top: -120vh; /* Adjusted for better mobile visibility */
   }
 }
@@ -320,35 +320,35 @@ body {
 
 #firework4 {
     left: 45%;
-    top: 80%;
+    top: 60%;
     transform: scale(1);
 }
 
 #firework5 {
-    left: 50%;
-    top: 70%;
+    left: 30%;
+    top: 30%;
     transform: scale(0.5);
 }
 
 #firework6 {
-    left: 90%;
-    top: 55%;
+    left: 30%;
+    top: 30%;
     transform: scale(1.5);
 }
-#firework7 {
-    left: 25%;
-    top: 90%;
+ #firework7 {
+    left: 90%;
+    top: 50%;
     transform: scale(1);
 }
 
 #firework8 {
-    left: 60%;
-    top: 25%;
-    transform: scale(0.5);
+    left: 30;
+    top: 70%;
+    transform: scale(1.5);
 }
 
 #firework9 {
-    left: 20%;
-    top: 15%;
+    left: 99%;
+    top: 30%;
     transform: scale(1.5);
-}
+} 
