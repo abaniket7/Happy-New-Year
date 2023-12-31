@@ -19,7 +19,7 @@ body {
 .msg {
   width: 100%;
   font-family: "Bilbo Swash Caps", cursive;
-  font-size: 100px;
+  font-size: 6vw;
   font-weight: bolder;
   color: #ff00c3;
   text-align: center;
@@ -29,6 +29,13 @@ body {
   animation: message 2s ease-in-out 6s forwards;
 }
 
+/* Add media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .msg {
+    font-size: 10vw;
+  }
+}
+
 @keyframes message {
   0% {
     opacity: 0;
@@ -36,26 +43,26 @@ body {
   }
   100% {
     opacity: 1;
-    margin-top: -200px;
+    margin-top: -10vh; /* Adjusted for better mobile visibility */
   }
 }
 
 .y1 {
-  color: #fff;
-  animation: y1colorful 2s ease-in-out 5.75s forwards;
-}
-.y2 {
-  color: #fff;
-  animation: y2colorful 2s ease-in-out 5.75s forwards;
-}
-.y3 {
-  color: #fff;
-  animation: y3colorful 2s ease-in-out 5.75s forwards;
-}
-.y4 {
-  color: #fff;
-  animation: y4colorful 2s ease-in-out 5.75s forwards;
-}
+    color: #fff;
+    animation: y1colorful 2s ease-in-out 5.75s forwards;
+  }
+  .y2 {
+    color: #fff;
+    animation: y2colorful 2s ease-in-out 5.75s forwards;
+  }
+  .y3 {
+    color: #fff;
+    animation: y3colorful 2s ease-in-out 5.75s forwards;
+  }
+  .y4 {
+    color: #fff;
+    animation: y4colorful 2s ease-in-out 5.75s forwards;
+  }
 
 @keyframes y1colorful {
     0% {
@@ -95,7 +102,7 @@ body {
   position: absolute;
   top: 0%;
   animation: old_animation 2.5s ease-in-out 4s forwards;
-  margin-left: -80px;
+  margin-left: -0vw; /* Adjusted for better mobile visibility */
 }
 
 @keyframes old_animation {
@@ -103,163 +110,167 @@ body {
     top: 0%;
   }
   100% {
-    top: -250%;
+    top: -750%;
   }
 }
 
 .year {
   position: absolute;
-  top: 450px;
+  top: 20vh; /* Adjusted for better mobile visibility */
   width: 100%;
   text-align: center;
 }
 
 .year > span {
-  font-size: 175px;
+  font-size: 8vw;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  letter-spacing: -12px;
-}
-
-.first_year {
-  margin-right: 100px;
+  letter-spacing: -1vw; /* Adjusted for better mobile visibility */
 }
 
 .new {
   position: absolute;
-  right: -100px;
+  right: 0;
+  bottom: 0;
   animation: new_animation 5s ease-in-out 1.5s forwards;
+}
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .new {
+    right: 0;
+  }
 }
 
 @keyframes new_animation {
   0% {
-    right: -100px;
+    right: -4vw; /* Adjusted for better mobile visibility */
   }
   40% {
-    right: 635px;
+    right: 35vw; /* Adjusted for better mobile visibility */
   }
   90% {
-    right: 635px;
+    right: 35vw; /* Adjusted for better mobile visibility */
   }
   100% {
-    right: 735px;
+    right: 39vw; /* Adjusted for better mobile visibility */
     color: yellow;
   }
 }
 
 .balloon {
-  width: 100px;
-  height: 120px;
+  width: 10vw; /* Adjusted for better mobile visibility */
+  height: 12vw; /* Adjusted for better mobile visibility */
   border-radius: 50%;
   background-color: red;
   position: absolute;
   top: 50%;
-  right: -100px;
-  margin-top: -285px;
+  right: -4vw; /* Adjusted for better mobile visibility */
+  margin-top: -25vw; /* Adjusted for better mobile visibility */
   animation: balloon_animation 5s ease-in-out 1.5s forwards;
 }
 
 .balloon::after {
   content: "";
-  width: 4px;
-  height: 100px;
+  width: 0.4vw; /* Adjusted for better mobile visibility */
+  height: 10vw; /* Adjusted for better mobile visibility */
   background-color: #fff;
   position: absolute;
   left: 50%;
-  margin-left: -2px;
-  bottom: -100px;
+  margin-left: -0.2vw; /* Adjusted for better mobile visibility */
+  bottom: -10vw; /* Adjusted for better mobile visibility */
 }
 
 .balloon::before {
   content: "";
   border-style: solid;
-  border-width: 0 10px 20px 10px;
+  border-width: 0 1vw 2vw 1vw; /* Adjusted for better mobile visibility */
   border-color: transparent transparent #fd3553 transparent;
   position: absolute;
   left: 50%;
-  bottom: -10px;
-  margin-left: -10px;
+  bottom: -1vw; /* Adjusted for better mobile visibility */
+  margin-left: -1vw; /* Adjusted for better mobile visibility */
 }
 
 @keyframes balloon_animation {
   0% {
-    right: -100px;
+    right: -8vw; /* Adjusted for better mobile visibility */
   }
   40% {
-    right: 635px;
+    right: 31vw; /* Adjusted for better mobile visibility */
   }
   50% {
-    right: 735px;
+    right: 36vw; /* Adjusted for better mobile visibility */
     top: 50%;
   }
   100% {
-    right: 735px;
-    top: -200%;
+    right: 36vw; /* Adjusted for better mobile visibility */
+    top: -20vh; /* Adjusted for better mobile visibility */
   }
 }
 
 .firework {
-    position: relative;
-    opacity: 0;
-    animation: show_fireworks 2s ease-in-out 5s forwards;
+  position: relative;
+  opacity: 0;
+  animation: show_fireworks 2s ease-in-out 5s forwards;
 }
 
 @keyframes show_fireworks {
-    0% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cracker {
-    position: absolute;
-    width: 4px;
-    height: 80px;
-    transform-origin: 50% 100%;
-    overflow: hidden;
+  position: absolute;
+  width: 0.4vw; /* Adjusted for better mobile visibility */
+  height: 8vw; /* Adjusted for better mobile visibility */
+  transform-origin: 50% 100%;
+  overflow: hidden;
 }
 
 .cracker::before {
-    content: '';
-    background-color: gold;
-    height: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    animation: fire 2s ease-in-out infinite;
+  content: '';
+  background-color: gold;
+  height: 4vw; /* Adjusted for better mobile visibility */
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: fire 2s ease-in-out infinite;
 }
 
 @keyframes fire {
-    0% {
-        top: 100%;
-    }
-    25% {
-        top: 50%;
-    }
-    50% {
-        top: -25%;
-    }
-    75% {
-        top: -50%;
-    }
-    100% {
-        top: -50%;
-    }
+  0% {
+    top: 100%;
+  }
+  25% {
+    top: 50%;
+  }
+  50% {
+    top: -25%;
+  }
+  75% {
+    top: -50%;
+  }
+  100% {
+    top: -50%;
+  }
 }
 
 .cracker:nth-child(1) {
-    transform: rotate(0deg) translateY(-15px);
+  transform: rotate(0deg) translateY(-1vw); /* Adjusted for better mobile visibility */
 }
 .cracker:nth-child(2) {
-    transform: rotate(30deg) translateY(-15px);
+  transform: rotate(30deg) translateY(-1vw); /* Adjusted for better mobile visibility */
 }
 .cracker:nth-child(3) {
-    transform: rotate(60deg) translateY(-15px);
+  transform: rotate(60deg) translateY(-1vw); /* Adjusted for better mobile visibility */
 }
 .cracker:nth-child(4) {
     transform: rotate(90deg) translateY(-15px);
