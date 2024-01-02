@@ -17,6 +17,7 @@ body {
 }
 
 .msg {
+  z-index: 2000;
   width: 100%;
   font-family: "Bilbo Swash Caps", cursive;
   font-size: 6vw;
@@ -29,7 +30,6 @@ body {
   animation: message 2s ease-in-out 6s forwards;
 }
 
-/* Add media query for smaller screens */
 @media only screen and (max-width: 768px) {
   .msg {
     font-size: 10vw;
@@ -43,7 +43,7 @@ body {
   }
   100% {
     opacity: 1;
-    margin-top: -10vh; /* Adjusted for better mobile visibility */
+    margin-top: -10vh; 
   }
 }
 
@@ -59,9 +59,9 @@ body {
     color: #fff;
     animation: y3colorful 2s ease-in-out 5.75s forwards;
   }
-  .y4 {
+  .y4{
     color: #fff;
-    animation: y4colorful 2s ease-in-out 5.75s forwards;
+    animation: y4colorful 0s ease-in-out 5.75s forwards;
   }
 
 @keyframes y1colorful {
@@ -102,7 +102,7 @@ body {
   position: absolute;
   top: 0%;
   animation: old_animation 2.5s ease-in-out 4s forwards;
-  margin-left: 0.6vw; /* Adjusted for better mobile visibility */
+  margin-left: 1.7vw; 
 }
 
 @keyframes old_animation {
@@ -115,8 +115,9 @@ body {
 }
 
 .year {
+  z-index: 2000;
   position: absolute;
-  top: 45vh; /* Adjusted for better mobile visibility */
+  top: 55vh; 
   width: 100%;
   text-align: center;
 }
@@ -125,87 +126,90 @@ body {
   font-size: 8vw;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  letter-spacing: -0.8vw; /* Adjusted for better mobile visibility */
+  letter-spacing: -0.8vw; 
 }
 
 .new {
+  z-index: 2000;
   position: absolute;
-  right: 0;
+  right: 0.5vw;
   bottom: 0;
   animation: new_animation 5s ease-in-out 1.5s forwards;
 }
 
-/* Add media query for smaller screens */
 @media only screen and (max-width: 768px) {
   .new {
-    right: 0;
+    right: 0.5vw;
+  }
+  .year{
+    top: 48vh;
   }
 }
 
 @keyframes new_animation {
   0% {
-    right: 0vw; /* Adjusted for better mobile visibility */
+    right: 0.5vw; 
   }
   40% {
-    right: 33.5vw; /* Adjusted for better mobile visibility */
+    right: 32.5vw; 
   }
   90% {
-    right: 33.5vw; /* Adjusted for better mobile visibility */
+    right: 32.5vw; 
   }
   100% {
-    right: 38.2vw; /* Adjusted for better mobile visibility */
+    right: 37.7vw; 
     color: yellow;
   }
 }
 
 .balloon {
-  width: 10vw; /* Adjusted for better mobile visibility */
-  height: 12vw; /* Adjusted for better mobile visibility */
+  width: 10vw; 
+  height: 12vw; 
   border-radius: 50%;
   background-color: red;
   position: absolute;
   top: 50%;
-  right: -4vw; /* Adjusted for better mobile visibility */
-  margin-top: -25vw; /* Adjusted for better mobile visibility */
+  right: -4vw; 
+  margin-top: -25vw; 
   animation: balloon_animation 5s ease-in-out 1.5s forwards;
 }
 
 .balloon::after {
   content: "";
-  width: 0.4vw; /* Adjusted for better mobile visibility */
-  height: 10vw; /* Adjusted for better mobile visibility */
+  width: 0.4vw;
+  height: 10vw;
   background-color: #fff;
   position: absolute;
   left: 50%;
-  margin-left: -0.2vw; /* Adjusted for better mobile visibility */
-  bottom: -10vw; /* Adjusted for better mobile visibility */
+  margin-left: -0.2vw; 
+  bottom: -10vw; 
 }
 
 .balloon::before {
   content: "";
   border-style: solid;
-  border-width: 0 1vw 2vw 1vw; /* Adjusted for better mobile visibility */
+  border-width: 0 1vw 2vw 1vw; 
   border-color: transparent transparent #fd3553 transparent;
   position: absolute;
   left: 50%;
-  bottom: -1vw; /* Adjusted for better mobile visibility */
-  margin-left: -1vw; /* Adjusted for better mobile visibility */
+  bottom: -1vw; 
+  margin-left: -1vw; 
 }
 
 @keyframes balloon_animation {
   0% {
-    right: -4vw; /* Adjusted for better mobile visibility */
+    right: -4vw; 
   }
   40% {
-    right: 29.8vw; /* Adjusted for better mobile visibility */
+    right: 28vw; 
   }
   50% {
-    right: 35vw; /* Adjusted for better mobile visibility */
+    right: 34.4vw;
     top: 50%;
   }
   100% {
-    right: 35vw; /* Adjusted for better mobile visibility */
-    top: -120vh; /* Adjusted for better mobile visibility */
+    right: 34.4vw; 
+    top: -1750% 
   }
 }
 
@@ -229,16 +233,15 @@ body {
 
 .cracker {
   position: absolute;
-  width: 0.4vw; /* Adjusted for better mobile visibility */
-  height: 8vw; /* Adjusted for better mobile visibility */
+  width: 0.4vw; 
+  height: 8vw; 
   transform-origin: 50% 100%;
   overflow: hidden;
 }
 
 .cracker::before {
   content: '';
-  background-color: gold;
-  height: 4vw; /* Adjusted for better mobile visibility */
+  height: 4vw; 
   position: absolute;
   left: 0;
   right: 0;
@@ -248,29 +251,38 @@ body {
 @keyframes fire {
   0% {
     top: 100%;
+    background-color: gold;
   }
-  25% {
+  20% {
     top: 50%;
+    background-color: rgb(63, 216, 91);
   }
-  50% {
-    top: -25%;
+  40% {
+    top: 20%;
+    background-color: rgb(204, 74, 169);
   }
-  75% {
-    top: -50%;
+  60% {
+    top: 10%;
+    background-color: rgb(226, 40, 27);
+  }
+  80% {
+    top: -10%;
+    background-color: rgb(81, 35, 197);
   }
   100% {
-    top: -50%;
+    top: -25%;
+    background-color: rgb(0, 221, 255);
   }
 }
 
 .cracker:nth-child(1) {
-  transform: rotate(0deg) translateY(-15px); /* Adjusted for better mobile visibility */
+  transform: rotate(0deg) translateY(-15px); 
 }
 .cracker:nth-child(2) {
-  transform: rotate(30deg) translateY(-15px); /* Adjusted for better mobile visibility */
+  transform: rotate(30deg) translateY(-15px); 
 }
 .cracker:nth-child(3) {
-  transform: rotate(60deg) translateY(-15px); /* Adjusted for better mobile visibility */
+  transform: rotate(60deg) translateY(-15px); 
 }
 .cracker:nth-child(4) {
     transform: rotate(90deg) translateY(-15px);
@@ -307,9 +319,9 @@ body {
 }
 
 #firework2 {
-    left: 50%;
-    top: 75%;
-    transform: scale(0.5);
+    left: 70%;
+    top: 69%;
+    transform: scale(0.8);
 }
 
 #firework3 {
@@ -320,14 +332,14 @@ body {
 
 #firework4 {
     left: 45%;
-    top: 60%;
+    top: 65%;
     transform: scale(1);
 }
 
 #firework5 {
-    left: 30%;
-    top: 30%;
-    transform: scale(0.5);
+    left: 75%;
+    top: 35%;
+    transform: scale(0.8);
 }
 
 #firework6 {
@@ -335,20 +347,23 @@ body {
     top: 30%;
     transform: scale(1.5);
 }
- #firework7 {
+
+#firework7 {
     left: 90%;
     top: 50%;
-    transform: scale(1);
-}
+    transform: scale(1.5);
+} 
 
 #firework8 {
-    left: 30;
-    top: 70%;
+    left: 40%;
+    top: 65%;
     transform: scale(1.5);
+    z-index: 1000;
 }
 
 #firework9 {
-    left: 99%;
-    top: 30%;
-    transform: scale(1.5);
+    left: 60%;
+    top: 35%;
+    transform: scale(1.2);
+    z-index: 1000;
 } 
