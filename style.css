@@ -32,7 +32,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .msg {
-    font-size: 10vw;
+    font-size: 11vw;
   }
 }
 
@@ -43,58 +43,49 @@ body {
   }
   100% {
     opacity: 1;
-    margin-top: -10vh; 
+    margin-top: -10vh;
   }
 }
 
 .y1 {
-    color: #fff;
-    animation: y1colorful 2s ease-in-out 5.75s forwards;
-  }
-  .y2 {
-    color: #fff;
-    animation: y2colorful 2s ease-in-out 5.75s forwards;
-  }
-  .y3 {
-    color: #fff;
-    animation: y3colorful 2s ease-in-out 5.75s forwards;
-  }
-  .y4{
-    color: #fff;
-    animation: y4colorful 0s ease-in-out 5.75s forwards;
-  }
+  color: #fff;
+  animation: y1colorful 2s ease-in-out 5.75s forwards;
+}
+.y2 {
+  color: #fff;
+  animation: y2colorful 2s ease-in-out 5.75s forwards;
+}
+.y3 {
+  color: #fff;
+  animation: y3colorful 2s ease-in-out 5.75s forwards;
+}
+.y4 {
+  color: #fff;
+}
 
 @keyframes y1colorful {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: orange;
-    }
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: orange;
+  }
 }
 @keyframes y2colorful {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #4cdde2;
-    }
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #4cdde2;
+  }
 }
 @keyframes y3colorful {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: #ff94a6;
-    }
-}
-@keyframes y4colorful {
-    0% {
-        color: #fff;
-    }
-    100% {
-        color: yellow;
-    }
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #ff94a6;
+  }
 }
 
 .old {
@@ -102,7 +93,7 @@ body {
   position: absolute;
   top: 0%;
   animation: old_animation 2.5s ease-in-out 4s forwards;
-  margin-left: 1.7vw; 
+  margin-left: 1.7vw;
 }
 
 @keyframes old_animation {
@@ -117,7 +108,7 @@ body {
 .year {
   z-index: 2000;
   position: absolute;
-  top: 55vh; 
+  top: 55vh;
   width: 100%;
   text-align: center;
 }
@@ -126,7 +117,7 @@ body {
   font-size: 8vw;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  letter-spacing: -0.8vw; 
+  letter-spacing: -0.8vw;
 }
 
 .new {
@@ -141,36 +132,39 @@ body {
   .new {
     right: 0.5vw;
   }
-  .year{
-    top: 48vh;
+  .year {
+    top: 46vh;
+  }
+  .old {
+    margin-left: 1.5vw;
   }
 }
 
 @keyframes new_animation {
   0% {
-    right: 0.5vw; 
+    right: 0.5vw;
   }
   40% {
-    right: 32.5vw; 
+    right: 32.5vw;
   }
   90% {
-    right: 32.5vw; 
+    right: 32.5vw;
   }
   100% {
-    right: 37.7vw; 
+    right: 37.7vw;
     color: yellow;
   }
 }
 
 .balloon {
-  width: 10vw; 
-  height: 12vw; 
+  width: 10vw;
+  height: 12vw;
   border-radius: 50%;
   background-color: red;
   position: absolute;
   top: 50%;
-  right: -4vw; 
-  margin-top: -25vw; 
+  right: -4vw;
+  margin-top: -25vw;
   animation: balloon_animation 5s ease-in-out 1.5s forwards;
 }
 
@@ -181,35 +175,35 @@ body {
   background-color: #fff;
   position: absolute;
   left: 50%;
-  margin-left: -0.2vw; 
-  bottom: -10vw; 
+  margin-left: -0.2vw;
+  bottom: -10vw;
 }
 
 .balloon::before {
   content: "";
   border-style: solid;
-  border-width: 0 1vw 2vw 1vw; 
+  border-width: 0 1vw 2vw 1vw;
   border-color: transparent transparent #fd3553 transparent;
   position: absolute;
   left: 50%;
-  bottom: -1vw; 
-  margin-left: -1vw; 
+  bottom: -1vw;
+  margin-left: -1vw;
 }
 
 @keyframes balloon_animation {
   0% {
-    right: -4vw; 
+    right: -4vw;
   }
   40% {
-    right: 28vw; 
+    right: 28vw;
   }
   50% {
     right: 34.4vw;
     top: 50%;
   }
   100% {
-    right: 34.4vw; 
-    top: -1750% 
+    right: 34.4vw;
+    top: -1750%;
   }
 }
 
@@ -233,15 +227,15 @@ body {
 
 .cracker {
   position: absolute;
-  width: 0.4vw; 
-  height: 8vw; 
+  width: 0.4vw;
+  height: 8vw;
   transform-origin: 50% 100%;
   overflow: hidden;
 }
 
 .cracker::before {
-  content: '';
-  height: 4vw; 
+  content: "";
+  height: 4vw;
   position: absolute;
   left: 0;
   right: 0;
@@ -276,94 +270,94 @@ body {
 }
 
 .cracker:nth-child(1) {
-  transform: rotate(0deg) translateY(-15px); 
+  transform: rotate(0deg) translateY(-15px);
 }
 .cracker:nth-child(2) {
-  transform: rotate(30deg) translateY(-15px); 
+  transform: rotate(30deg) translateY(-15px);
 }
 .cracker:nth-child(3) {
-  transform: rotate(60deg) translateY(-15px); 
+  transform: rotate(60deg) translateY(-15px);
 }
 .cracker:nth-child(4) {
-    transform: rotate(90deg) translateY(-15px);
+  transform: rotate(90deg) translateY(-15px);
 }
 .cracker:nth-child(5) {
-    transform: rotate(120deg) translateY(-15px);
+  transform: rotate(120deg) translateY(-15px);
 }
 .cracker:nth-child(6) {
-    transform: rotate(150deg) translateY(-15px);
+  transform: rotate(150deg) translateY(-15px);
 }
 .cracker:nth-child(7) {
-    transform: rotate(180deg) translateY(-15px);
+  transform: rotate(180deg) translateY(-15px);
 }
 .cracker:nth-child(8) {
-    transform: rotate(210deg) translateY(-15px);
+  transform: rotate(210deg) translateY(-15px);
 }
 .cracker:nth-child(9) {
-    transform: rotate(240deg) translateY(-15px);
+  transform: rotate(240deg) translateY(-15px);
 }
 .cracker:nth-child(10) {
-    transform: rotate(270deg) translateY(-15px);
+  transform: rotate(270deg) translateY(-15px);
 }
 .cracker:nth-child(11) {
-    transform: rotate(300deg) translateY(-15px);
+  transform: rotate(300deg) translateY(-15px);
 }
 .cracker:nth-child(12) {
-    transform: rotate(330deg) translateY(-15px);
+  transform: rotate(330deg) translateY(-15px);
 }
 
 #firework1 {
-    left: 25%;
-    top: 50%;
-    transform: scale(1);
+  left: 25%;
+  top: 50%;
+  transform: scale(1);
 }
 
 #firework2 {
-    left: 70%;
-    top: 69%;
-    transform: scale(0.8);
+  left: 70%;
+  top: 69%;
+  transform: scale(0.8);
 }
 
 #firework3 {
-    left: 80%;
-    top: 15%;
-    transform: scale(1.5);
+  left: 80%;
+  top: 15%;
+  transform: scale(1.5);
 }
 
 #firework4 {
-    left: 45%;
-    top: 65%;
-    transform: scale(1);
+  left: 45%;
+  top: 65%;
+  transform: scale(1);
 }
 
 #firework5 {
-    left: 75%;
-    top: 35%;
-    transform: scale(0.8);
+  left: 75%;
+  top: 35%;
+  transform: scale(0.8);
 }
 
 #firework6 {
-    left: 30%;
-    top: 30%;
-    transform: scale(1.5);
+  left: 30%;
+  top: 30%;
+  transform: scale(1.5);
 }
 
 #firework7 {
-    left: 90%;
-    top: 50%;
-    transform: scale(1.5);
-} 
+  left: 90%;
+  top: 50%;
+  transform: scale(1.5);
+}
 
 #firework8 {
-    left: 40%;
-    top: 65%;
-    transform: scale(1.5);
-    z-index: 1000;
+  left: 40%;
+  top: 65%;
+  transform: scale(1.5);
+  z-index: 1000;
 }
 
 #firework9 {
-    left: 60%;
-    top: 35%;
-    transform: scale(1.2);
-    z-index: 1000;
-} 
+  left: 60%;
+  top: 35%;
+  transform: scale(1.2);
+  z-index: 1000;
+}
