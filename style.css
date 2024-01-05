@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Poppins:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 *,
 *:after,
@@ -19,8 +19,7 @@ body {
 .msg {
   z-index: 2000;
   width: 100%;
-  font-family: "Bilbo Swash Caps", cursive;
-  font-size: 6vw;
+  font-family: 'Great Vibes', cursive;  font-size: 6vw;
   font-weight: bolder;
   color: #ff00c3;
   text-align: center;
