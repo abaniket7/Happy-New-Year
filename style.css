@@ -24,7 +24,7 @@ body {
   color: #ff00c3;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 55%;
   opacity: 0;
   animation: message 2s ease-in-out 6s forwards;
 }
